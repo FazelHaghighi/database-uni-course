@@ -1,0 +1,53 @@
+Entities:
+
+offices: This table stores information about different offices. It has attributes like officeCode, city, phone, addressLine, state, country, postalCode, and territory.
+
+employees: This table stores information about employees. It has attributes like employeeNumber, lastName, firstName, email, officeCode, reportsTo, and jobTitle.
+
+customers: This table stores information about customers. It has attributes like customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine, city, state, postalCode, country, salesRepEmployeeNumber, and creditLimit.
+
+orders: This table stores information about orders placed by customers. It has attributes like orderNumber, orderDate, requiredDate, shippedDate, status, comments, and customerNumber.
+
+payments: This table stores information about payments made by customers. It has attributes like customerNumber, checkNumber, paymentDate, and amount.
+
+productlines: This table stores information about different product lines. It has attributes like productLine, textDescription, htmlDescription, and image.
+
+products: This table stores information about different products. It has attributes like productCode, productName, productLine, productScale, productVendor, productDescription, quantityInStock, buyPrice, and MSRP.
+
+orderdetails: This table stores information about details of each order. It has attributes like orderNumber, productCode, quantityOrdered, priceEach, orderLineNumber, and discountCode.
+
+Requirements:
+
+Each office in the "offices" table must have a unique "officeCode."
+
+Each employee in the "employees" table must have a unique "employeeNumber."
+
+Each customer in the "customers" table must have a unique "customerNumber."
+
+Each order in the "orders" table must have a unique "orderNumber."
+
+Each payment in the "payments" table must have a unique combination of "customerNumber" and "checkNumber."
+
+Each product line in the "productlines" table must have a unique "productLine."
+
+Each product in the "products" table must have a unique "productCode."
+
+Each order detail in the "orderdetails" table must have a unique combination of "orderNumber" and "productCode."
+
+Relationships:
+
+The "employees" table has a foreign key "officeCode" referencing the "offices" table's "officeCode."
+
+The "employees" table has a foreign key "reportsTo" referencing the same "employees" table's "employeeNumber."
+
+The "customers" table has a foreign key "salesRepEmployeeNumber" referencing the "employees" table's "employeeNumber."
+
+The "orders" table has a foreign key "customerNumber" referencing the "customers" table's "customerNumber."
+
+The "payments" table has a foreign key "customerNumber" referencing the "customers" table's "customerNumber."
+
+The "products" table has a foreign key "productLine" referencing the "productlines" table's "productLine."
+
+The "orderdetails" table has a foreign key "orderNumber" referencing the "orders" table's "orderNumber."
+
+The "orderdetails" table has a foreign key "productCode" referencing the "products" table's "productCode."
