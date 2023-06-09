@@ -1,0 +1,2 @@
+π Customer.first_name, Customer.last_name (σ City.name = 'Hamilton' City ⨝ City.city_id = Address.city_id Address ⨝ Address.address_id = Customer.address_id Customer) ∩
+π Customer.first_name, Customer.last_name (σ Category.name ≠ 'Sports' and Category.name ≠ 'Foreign' Category ⨝ Category.category_id = Film_Category.category_id Film_Category ⨝ Film_Category.film_id = Inventory.film_id Inventory ⨝ Inventory.inventory_id = Rental.inventory_id Rental ⨝ Rental.customer_id = Customer.customer_id Customer)

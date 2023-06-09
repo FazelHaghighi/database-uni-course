@@ -1,0 +1,1 @@
+π Customer.first_name, Customer.last_name (σ City.name = 'London' or City.name = 'Stockport' (Customer ⨝ Customer.address_id = Address.address_id Address ⨝ Address.city_id = City.city_id City))

@@ -1,0 +1,2 @@
+π Address.phone, Address.postal_code (σ Category.name = 'Animation' Category ⨝ Category.category_id = Film_Category.category_id Film_Category ⨝ Film_Category.film_id = Inventory.film_id Inventory ⨝ Inventory.inventory_id = Rental.inventory_id Rental ⨝ Rental.customer_id = Customer.customer_id Customer ⨝ Customer.address_id = Address.address_id Address) ∩
+π Address.phone, Address.postal_code (σ City.name = 'Manchester' City ⨝ City.city_id = Address.city_id Address)

@@ -1,0 +1,1 @@
+π Film.title (σ Payment.amount ≥ 9 and Payment.amount ≤ 11 (Film ⨝ Film.film_id = Inventory.film_id Inventory ⨝ Inventory.inventory_id = Rental.inventory_id Rental ⨝ Rental.rental_id = Payment.rental_id Payment))

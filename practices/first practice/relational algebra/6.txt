@@ -1,0 +1,1 @@
+π Staff.first_name, Staff.last_name (σ Country.name = 'Canada' (Staff ⨝ Staff.address_id = Address.address_id Address ⨝ Address.city_id = City.city_id City ⨝ City.country_id = Country.country_id Country))

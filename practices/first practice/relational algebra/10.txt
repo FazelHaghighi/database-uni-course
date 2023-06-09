@@ -1,0 +1,1 @@
+π Actor.first_name, Actor.last_name, Category.category_id (Category ⨝ Category.category_id = Film_Category.category_id Film_Category ⨝ Film_Category.film_id = Film_Actor.film_id Film_Actor ⨝ Film_Actor.actor_id = Actor.actor_id Actor) ÷ π category_id Category

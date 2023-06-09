@@ -1,0 +1,1 @@
+π title (σ name = 'Action' ((Film ⨝ Film.film_id = Film_Category.film_id Film_Category) ⨝ (Film_Category ⨝ Film_Category.category_id = Category.category_id Category)))
